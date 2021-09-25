@@ -30,8 +30,32 @@ def apoiar_candidato(nome, vezes):
         else:
             print(numero +1, '-', nome)
 
+def exibir_dia_da_semana_if(numero):
+    if numero == 1:
+        print('O dia e segunda!')
+    elif numero == 2:
+        print('O dia e terça!')
+    elif numero == 3:
+        print('O dia e Quarta!')
+    elif numero == 4:
+        print('O dia e Quinta!')
+    elif numero == 5:
+        print('O dia e Sexta!')
+    elif numero == 6:
+        print('O dia e Sabado!')
+    elif numero == 7:
+        print('O dia e Domingo!')
+    else:
+        print("Numero de dia inválido. Digite um numero de 1 a 7")
 
+def brincar_de_para_ou_continua():
+    resposta = 'C'
 
+    # while resposta == 'C' or resposta == 'c':
+    while resposta.upper() == 'C':
+        resposta = input('Digite P para Parar e C para Continuar')
+
+    print('Voce decidiu parar!')
 
 # estrutura de identificação/ execução de script
 if __name__ == '__main__':
@@ -48,3 +72,9 @@ if __name__ == '__main__':
     contagem_progressiva(10)
 
     apoiar_candidato('fake', 100)
+
+    # exemplo de dia da semana com if - elif - else
+    exibir_dia_da_semana_if(1)
+
+    # exemplo com while - para ou continua
+    brincar_de_para_ou_continua()
